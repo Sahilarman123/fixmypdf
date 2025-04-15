@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
       >
         <h1 className="page-title">Privacy Policy</h1>
         <p className="page-description">
-          We take your privacy seriously. Here's how FixMyPDF handles your data.
+          We take your privacy seriously. Here is how FixMyPDF handles your data.
         </p>
 
         <div className="policy-section">

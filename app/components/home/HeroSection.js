@@ -2,6 +2,8 @@
 import { motion } from 'framer-motion';
 import { FiFileText, FiArrowRight } from 'react-icons/fi';
 import Link from 'next/link';
+import Image from 'next/image';
+
 
 export default function HeroSection() {
   return (
@@ -16,7 +18,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="hero-title">
-            All the FixMyPDF you'll ever need
+            All the FixMyPDF you will ever need
           </h1>
           <p className="hero-subtext">
             Every tool you need to work with PDFs in one place. Convert, compress, sign and edit PDFs with our fast and secure online tool.
@@ -41,9 +43,11 @@ export default function HeroSection() {
             <div className="absolute inset-0 rounded-2xl transform rotate-3 scale-105 opacity-20" style={{
               background: 'linear-gradient(135deg, #8b5cf6, #6d28d9)'
             }}></div>
-            <img 
-              src="/hero-pdf.svg" 
-              alt="FixMyPDF" 
+            <Image 
+              src="/hero-pdf.svg"
+              alt="FixMyPDF"
+              width={400}
+              height={400}
               className="relative z-10 w-full max-w-md mx-auto"
             />
           </div>

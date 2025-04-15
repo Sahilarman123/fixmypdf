@@ -12,7 +12,7 @@ export default function PricingPage() {
       >
         <h1 className="page-title">Pricing Plans</h1>
         <p className="page-description">
-          Choose a plan that fits your needs. Whether you're working with a few files or managing
+          Choose a plan that fits your needs. Whether you are working with a few files or managing
           documents daily, FixMyPDF has the perfect plan for you.
         </p>
 

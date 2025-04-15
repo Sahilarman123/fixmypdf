@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
               />
             ))}
           </div>
-          <p className="testimonial-text">"{testimonial.content}"</p>
+          <p className="testimonial-text">&quot;{testimonial.content}&quot;</p>
           <div className="testimonial-author">
             <p className="author-name">{testimonial.name}</p>
             <p className="author-role">{testimonial.role}</p>

@@ -16,9 +16,9 @@ export default function AboutPage() {
         </p>
 
         <p className="about-text">
-          We're a passionate team of developers and designers who believe that document tools should be simple, 
+          We are a passionate team of developers and designers who believe that document tools should be simple, 
           efficient, and accessible to everyone. With users across the globe and millions of files processed,
-          we're proud to offer a toolset that’s trusted and loved.
+          we are proud to offer a toolset that’s trusted and loved.
         </p>
       </motion.div>
     </div>
