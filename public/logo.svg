@@ -1,0 +1,17 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" rx="32" fill="#0EA5E9"/>
+  <g transform="translate(30, 40)">
+    <!-- File Icon -->
+    <rect x="0" y="0" width="60" height="72" rx="8" fill="white"/>
+    <path d="M0 12H60" stroke="#0EA5E9" stroke-width="3"/>
+    <path d="M0 30H50" stroke="#0EA5E9" stroke-width="3"/>
+    <path d="M0 48H36" stroke="#0EA5E9" stroke-width="3"/>
+
+    <!-- Wrench Icon -->
+    <path d="M82 24c-2-2-5.3-2.2-7.2-.3-2.2 2.2-1.8 6 1.1 7.7L62 70l6 6 19.8-19.8c1.6.7 3.6.5 4.9-.9 2-2 1.8-5.3-.3-7.2L82 24z" fill="white"/>
+  </g>
+
+  <text x="80" y="145" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" fill="white" font-weight="600">
+    FixMyPDF
+  </text>
+</svg>
