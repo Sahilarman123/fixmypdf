@@ -53,6 +53,206 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --primary-color: #0ea5e9;
+  --primary-dark: #02273c;
+  --bg-color: #f8fafc;
+  --text-color: #cd112a;
+  --card-bg: #ffffff;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --primary-color: #38bdf8;
+  --primary-dark: #02273c;
+  --bg-color: #0f172a;
+  --text-color: #cd112a;
+  --card-bg: #1e293b;
+  --card-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+
+/* ======= TOOLS GLASS STYLE ======= */
+.tool-card.tool-glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.tool-card.tool-glass:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.tool-icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.tool-meta {
+  flex-grow: 1;
+}
+
+.tool-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.tool-desc {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+
+.hero-demo {
+  background: linear-gradient(135deg, #6366F1, #14B8A6);
+  color: white;
+  padding: 6rem 1rem;
+}
+
+.hero-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .hero-grid {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #6366F1, #14B8A6);
+  padding: 0.75rem 1.5rem;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-outline {
+  border: 1px solid white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+}
+
+.hero-img img {
+  max-width: 400px;
+  border-radius: 1rem;
+}
+
+/* Tools Section */
+.tools-demo {
+  background-color: #f8fafc;
+  padding: 4rem 1rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.tools-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tools-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tool-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: var(--card-shadow);
+}
+.hero-demo {
+  background: var(--primary-dark);
+  color: var(--text-color);
+}
+.section-title {
+  color: var(--text-color);
+}
+
+
+
+.tool-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: white;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-decoration: none;
+  transition: 0.3s ease;
+  color: inherit;
+}
+
+.tool-card:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+
+.tool-icon {
+  background-color: #e0f2fe;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  color: #0ea5e9;
+  font-size: 1.25rem;
+}
+
+
 .login-container {
   min-height: 100vh;
   background: linear-gradient(to bottom right, #e0f2fe, #cce4ff);

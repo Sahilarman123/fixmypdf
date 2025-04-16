@@ -99,12 +99,14 @@ export default function ToolsGrid() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <Link href={tool.link} className="tool-card">
-              <div className={`tool-icon ${tool.color}`}>
+            <Link href={tool.link} className="tool-card tool-glass">
+              <div className={`tool-icon rounded-md ${tool.color}`}>
                 {tool.icon}
               </div>
-              <h3 className="tool-title">{tool.name}</h3>
-              <p className="tool-desc">{tool.description}</p>
+              <div className="tool-meta">
+                <h3 className="tool-title">{tool.name}</h3>
+                <p className="tool-desc">{tool.description}</p>
+              </div>
             </Link>
           </motion.div>
         ))}

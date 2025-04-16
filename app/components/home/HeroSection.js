@@ -1,61 +1,39 @@
 'use client';
 import { motion } from 'framer-motion';
-import { FiFileText, FiArrowRight } from 'react-icons/fi';
 import Link from 'next/link';
-import Image from 'next/image';
-
+import { FiFileText, FiArrowRight } from 'react-icons/fi';
 
 export default function HeroSection() {
   return (
-    <section className="hero-section">
-    <div className="container">
-      <div className="hero-content">
-        
-        <motion.div 
+    <section className="hero-demo">
+      <div className="container hero-grid">
+        <motion.div
           className="hero-text"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
         >
-          <h1 className="hero-title">
-            All the FixMyPDF you will ever need
-          </h1>
-          <p className="hero-subtext">
-            Every tool you need to work with PDFs in one place. Convert, compress, sign and edit PDFs with our fast and secure online tool.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link href="/tools/convert-pdf" className="hero-btn primary">
+          <h1>Work with PDFs effortlessly</h1>
+          <p>All-in-one toolkit to convert, compress, edit & organize your PDFs online.</p>
+          <div className="hero-btns">
+            <Link href="/tools/convert-pdf" className="btn btn-gradient">
               <FiFileText /> Get Started
             </Link>
-            <Link href="/tools" className="hero-btn secondary">
+            <Link href="/tools" className="btn btn-outline">
               View All Tools <FiArrowRight />
             </Link>
           </div>
         </motion.div>
-  
-        <motion.div 
-          className="hero-image"
+
+        <motion.div
+          className="hero-img"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="relative">
-            <div className="absolute inset-0 rounded-2xl transform rotate-3 scale-105 opacity-20" style={{
-              background: 'linear-gradient(135deg, #8b5cf6, #6d28d9)'
-            }}></div>
-            <Image 
-              src="/hero-pdf.svg"
-              alt="FixMyPDF"
-              width={400}
-              height={400}
-              className="relative z-10 w-full max-w-md mx-auto"
-            />
-          </div>
+          <img src="/hero-pdf.svg" alt="FixMyPDF" />
         </motion.div>
-  
       </div>
-    </div>
-  </section>
-  
+    </section>
   );
 }
